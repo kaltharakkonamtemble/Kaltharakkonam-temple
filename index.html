@@ -44,7 +44,9 @@ footer{background:#3d101a;color:#fff1dc;text-align:center;padding:22px}
 <h3 style="text-align:center;color:var(--maroon)">ക്ഷേത്രത്തിലെ വഴിപാട് നിരക്കുകൾ</h3><img class="rates" src="assets/offering-rates.jpg" alt="വഴിപാട് നിരക്കുകളുടെ പട്ടിക">
 <p class="note">നിരക്കുകൾ ബുക്കിംഗിന് മുമ്പ് ക്ഷേത്ര അധികൃതരുമായി സ്ഥിരീകരിക്കുക.</p></section>
 <section id="booking"><h2>ഓൺലൈൻ പൂജ ബുക്കിംഗ് അഭ്യർത്ഥന</h2><p class="intro">വിവരങ്ങൾ പൂരിപ്പിച്ച് WhatsApp വഴി ക്ഷേത്രത്തിലേക്ക് അയയ്ക്കാം. സ്ഥിരീകരണത്തിന് ശേഷമേ ബുക്കിംഗ് ഉറപ്പാകൂ.</p>
-<form id="bookingForm"><label>ഭക്തന്റെ പേര് *</label><input id="name" required><label>നക്ഷത്രം</label><input id="star"><label>മൊബൈൽ നമ്പർ *</label><input id="phone" type="tel" required>
+<form id="bookingForm"><label>ഭക്തന്റെ പേര് *</label>വിലാസം <input id="name" required>
+<label>വിലാസം *</label><textarea id="address" required></textarea>
+<label>നക്ഷത്രം</label><input id="star"><label>മൊബൈൽ നമ്പർ *</label><input id="phone" type="tel" required>
 <label>പൂജ / വഴിപാട് *</label><select id="poojaName" required><option value="">തിരഞ്ഞെടുക്കുക</option><option>ഗണപതി ഹോമം</option><option>മൃത്യുഞ്ജയ ഹോമം</option><option>ആയില്യ പൂജ</option><option>നാഗരൂട്ട്</option><option>ഭഗവതി സേവ</option><option>പൗർണമി പൂജ</option><option>രാഹുകാല പൂജ</option><option>മറ്റുള്ളവ</option></select>
 <label>പൂജ നടത്തേണ്ട തീയതി *</label><input id="date" type="date" required><label>കൂടുതൽ വിവരങ്ങൾ</label><textarea id="details"></textarea>
 <button class="btn" type="submit">WhatsApp വഴി ബുക്കിംഗ് അയയ്ക്കുക</button><p class="note">WhatsApp: 9746014157</p></form></section>
@@ -53,6 +55,6 @@ footer{background:#3d101a;color:#fff1dc;text-align:center;padding:22px}
 <script>
 const TEMPLE_WHATSAPP_NUMBER="9746014157";
 document.getElementById("bookingForm").addEventListener("submit",function(e){e.preventDefault();const v=id=>document.getElementById(id).value.trim();
-const msg=`പൂജ ബുക്കിംഗ് അഭ്യർത്ഥന\\nപേര്: ${v("name")}\\nനക്ഷത്രം: ${v("star")}\\nമൊബൈൽ: ${v("phone")}\\nപൂജ: ${v("poojaName")}\\nതീയതി: ${v("date")}\\nകൂടുതൽ വിവരങ്ങൾ: ${v("details")}`;
+const msg=`പൂജ ബുക്കിംഗ് അപേക്പേര്: ${v("name")വിലാസം: ${v("address")}നക്ഷത്രം: ${v("star")}മൊബൈൽ: ${v("phone")}പൂജ: ${v("poojaName")}തീയതി: ${v("date")}കൂടുതൽ വിവരങ്ങൾ: ${v("details")}`;
 window.open(`https://wa.me/${TEMPLE_WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank");});
 </script></body></html>
