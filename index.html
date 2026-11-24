@@ -218,7 +218,159 @@ footer{background:#3d101a;color:#fff1dc;text-align:center;padding:22px}
 <form id="bookingForm"><label>ഭക്തന്റെ പേര് *</label>വിലാസം <input id="name" required>
 <label>വിലാസം *</label><textarea id="address" required></textarea>
 <label>നക്ഷത്രം</label><input id="star"><label>മൊബൈൽ നമ്പർ *</label><input id="phone" type="tel" required>
-<label>പൂജ / വഴിപാട് *</label><select id="poojaName" required multiple size="6"><option value="">തിരഞ്ഞെടുക്കുക</option><option>ഗണപതി ഹോമം</option><option>മൃത്യുഞ്ജയ ഹോമം</option><option>ആയില്യ പൂജ</option><option>നാഗരൂട്ട്</option><option>ഭഗവതി സേവ</option><option>പൗർണമി പൂജ</option><option>രാഹുകാല പൂജ</option><option>മറ്റുള്ളവ</option></select>
+<label>പൂജ / വഴിപാട് തിരഞ്ഞെടുക്കുക *</label>
+
+<select id="poojaName" required multiple size="15">
+
+<optgroup label="🌺 1. അർച്ചനകൾ">
+
+<option>അർച്ചന</option>
+
+<option>നൂൽജപം</option>
+
+<option>കരിക്കജപം</option>
+
+<option>തട്ടുപൂജ</option>
+
+<option>സമർപ്പണം</option>
+
+<option>പട്ടുസമർപ്പണം</option>
+
+<option>നീരാജനം</option>
+
+<option>കുങ്കുമാർച്ചന</option>
+
+<option>രക്തപുഷ്പാർച്ചന</option>
+
+<option>സ്വയംവരാർച്ചന</option>
+
+<option>മൃത്യുഞ്ജയ അർച്ചന</option>
+
+<option>ശ്രീസൂക്താർച്ചന</option>
+
+<option>ഭാഗ്യസൂക്താർച്ചന</option>
+
+<option>വിദ്യാസൂക്താർച്ചന</option>
+
+</optgroup>
+
+<optgroup label="🪔 2. വിളക്കുകൾ">
+
+<option>എള്ളുവിളക്ക്</option>
+
+<option>നാരങ്ങാവിളക്ക്</option>
+
+<option>പിൻവിളക്ക്</option>
+
+<option>നെയ് വിളക്ക്</option>
+
+<option>താലപ്പൊലി</option>
+
+<option>ചമയവിളക്ക്</option>
+
+<option>കല്ലുവിളക്ക്</option>
+
+<option>ചുറ്റുവിളക്ക്</option>
+
+</optgroup>
+
+<optgroup label="💧 3. അഭിഷേകങ്ങൾ">
+
+<option>ജലധാര</option>
+
+<option>മഞ്ഞൾ അഭിഷേകം</option>
+
+<option>പാൽ അഭിഷേകം</option>
+
+<option>ക്ഷീരധാര</option>
+
+<option>നെയ്യഭിഷേകം</option>
+
+<option>പഞ്ചാമൃത അഭിഷേകം</option>
+
+<option>ലളിതധാര</option>
+
+<option>കുങ്കുമാഭിഷേകം</option>
+
+</optgroup>
+
+<optgroup label="🥥 4. നിവേദ്യങ്ങൾ">
+
+<option>നൂറും പാലും</option>
+
+<option>ത്രിമധുരം</option>
+
+<option>കുഞ്ഞുണ്ണി</option>
+
+<option>വെള്ളനിവേദ്യം</option>
+
+<option>പഞ്ചാമൃതം</option>
+
+<option>പാൽപായസം</option>
+
+<option>ശർക്കരപ്പായസം</option>
+
+<option>അട</option>
+
+<option>പാനക നിവേദ്യം</option>
+
+<option>കടുംപായസം</option>
+
+<option>പറ</option>
+
+</optgroup>
+
+<optgroup label="🔥 5. ഹോമങ്ങൾ">
+
+<option>കൂടുതൽ വിവരങ്ങൾക്കായി ഹോമം</option>
+
+<option>കൂഷ്മാണ്ഡ ഹോമം</option>
+
+<option>മഹാഗണപതി ഹോമം</option>
+
+<option>മഹാമൃത്യുഞ്ജയ ഹോമം</option>
+
+</optgroup>
+
+<optgroup label="🙏 6. വിശേഷാൽ പൂജകൾ">
+
+<option>പ്രദോഷപൂജ</option>
+
+<option>തൃക്കാർത്തിക പൂജ</option>
+
+<option>അഷ്ടമംഗല്യം</option>
+
+<option>ഐശ്വര്യപൂജ</option>
+
+<option>രാഹുപൂജ</option>
+
+<option>ആയില്യപൂജ</option>
+
+<option>മുഖക്കാപ്പ്</option>
+
+<option>ഭഗവതിസേവ</option>
+
+<option>ഒരുനേരം പൂജ</option>
+
+<option>ഒരു ദിവസത്തെ പൂജ</option>
+
+<option>കലശപൂജ</option>
+
+<option>ആയില്യപൂജ, നാഗരൂട്ട്</option>
+
+</optgroup>
+
+<optgroup label="🌸 7. മറ്റ് വഴിപാടുകൾ">
+
+<option>പിടിപ്പണം</option>
+
+<option>തുലാഭാരം</option>
+
+<option>വാഹനപൂജ</option>
+
+</optgroup>
+
+</select>
 <label>പൂജ നടത്തേണ്ട തീയതി *</label><input id="date" type="date" required><label>കൂടുതൽ വിവരങ്ങൾ</label><textarea id="details"></textarea>
 <button class="btn" type="submit">WhatsApp വഴി ബുക്കിംഗ് അയയ്ക്കുക</button><p class="note">WhatsApp: 9746014157</p></form></section>
 <section id="contact"><h2>ബന്ധപ്പെടുക</h2><p class="intro"><b>കളത്തറക്കോണം കാവിൽ ദേവി ക്ഷേത്രം</b><br>ഇടയ്ക്കോട്, നേമം പി.ഒ.<br>ട്രസ്റ്റ് രജിസ്റ്റർ നമ്പർ : 2940/05<br>ഫോൺ / WhatsApp: <b>9656805370/9496261260</b></p></section>
