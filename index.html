@@ -401,7 +401,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
 
     ).map(option => option.text);
 
-    const msg = `ക്ഷേത്ര പൂജ ബുക്കിംഗ് അപേക്ഷ
+   const msg = `🔸ക്ഷേത്ര പൂജ ബുക്കിംഗ് അപേക്ഷ
 
 ഭക്തന്റെ പേര്: ${v("name")}
 
@@ -409,7 +409,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
 
 നക്ഷത്രം: ${v("star")}
 
-മൊബൈൽ നമ്പർ: ${v("phone")}=
+മൊബൈൽ നമ്പർ: ${v("phone")}
 
 തിരഞ്ഞെടുത്ത വഴിപാടുകൾ:
 
@@ -418,10 +418,9 @@ ${poojas.join("\n")}
 പൂജ നടത്തേണ്ട തീയതി: ${v("date")}
 
 കൂടുതൽ വിവരങ്ങൾ: ${v("details")}`;
-
     window.open(
 
- https://wa.me/${TEMPLE_WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}',      
+ `https://wa.me/${TEMPLE_WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,      
 
         "_blank"
 
