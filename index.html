@@ -372,11 +372,23 @@ footer{background:#3d101a;color:#fff1dc;text-align:center;padding:22px}
 
 </select>
 <label>പൂജ നടത്തേണ്ട തീയതി *</label><input id="date" type="date" required><label>കൂടുതൽ വിവരങ്ങൾ</label><textarea id="details"></textarea>
-<button class="btn" type="submit">WhatsApp വഴി ബുക്കിംഗ് അയയ്ക്കുക</button><p class="note">WhatsApp: 9746014157</p></form></section>
+<button class="btn" type="submit">WhatsApp വഴി ബുക്കിംഗ് അയയ്ക്കുക</button><p class="note">WhatsApp: 9746014157</p></form>
+</section>
+<div class="card" style="text-align:center;">
+
+<h3>ഓൺലൈൻ പണമടയ്ക്കൽ</h3>
+
+<p>QR കോഡ് സ്കാൻ ചെയ്ത് പണമടയ്ക്കുക.</p>
+
+<img src="assets/QR%20KAVIL.jpeg" alt="Temple QR Code" style="width:250px;max-width:100%;">
+
+<p>പണമടച്ചതിന്റെ സ്ക്രീൻഷോട്ട് WhatsApp വഴി അയക്കുക.</p>
+
+</div>
 <section id="contact"><h2>ബന്ധപ്പെടുക</h2><p class="intro"><b>കളത്തറക്കോണം കാവിൽ ദേവി ക്ഷേത്രം</b><br>ഇടയ്ക്കോട്, നേമം പി.ഒ.<br>ട്രസ്റ്റ് രജിസ്റ്റർ നമ്പർ : 2940/05<br>ഫോൺ / WhatsApp: <b>9656805370/9496261260</b></p></section>
 </main><footer>🪔 കളത്തറക്കോണം കാവിൽ ദേവി ക്ഷേത്രം 🪔<br>ഇടയ്ക്കോട്, നേമം പി.ഒ.</footer>
 <script>
-const TEMPLE_WHATSAPP_NUMBER="9746014157";
+const TEMPLE_WHATSAPP_NUMBER="9746014157";++___
 document.getElementById("bookingForm").addEventListener("submit", function(e) {
 
     e.preventDefault();
@@ -385,7 +397,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
 
     const poojas = Array.from(
 
-        document.getElementById("poojaName").selectedOptions
+        document.getElementById("poojaName").selectedOptions=
 
     ).map(option => option.text);
 
